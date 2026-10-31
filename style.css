@@ -35,7 +35,7 @@ body {
 
 .card {
   width: 100%;
-  max-width: 480px;
+  max-width: 520px;
   padding: 40px 32px 32px;
   background: var(--panel);
   border: 1px solid var(--line);
@@ -43,18 +43,13 @@ body {
   text-align: center;
 }
 
-.monogram {
-  width: 72px;
-  height: 72px;
+.avatar {
+  display: block;
+  width: 96px;
+  height: 96px;
   margin: 0 auto 16px;
-  display: grid;
-  place-items: center;
   border-radius: 50%;
-  background: var(--tum-blue);
-  color: #fff;
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  object-fit: cover;
 }
 
 h1 { margin: 0; font-size: 28px; }
@@ -63,34 +58,46 @@ h1 { margin: 0; font-size: 28px; }
 
 .bio { margin: 0 0 28px; font-size: 15px; }
 
-.links { display: grid; gap: 10px; }
+.group { margin: 0 0 20px; text-align: left; }
 
-.links a {
+.group h2 {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.chips {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chips a {
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
+  gap: 8px;
+  padding: 8px 14px;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 999px;
   color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
-  text-align: left;
   transition: border-color 0.15s, background 0.15s;
 }
 
-.links a:hover,
-.links a:focus-visible {
+.chips a:hover,
+.chips a:focus-visible {
   border-color: var(--tum-blue);
   background: color-mix(in srgb, var(--tum-blue) 8%, transparent);
   outline: none;
-}
-
-.label {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 600;
 }
 
 .icon {
@@ -106,8 +113,6 @@ span.icon {
   mask: var(--icon) center / contain no-repeat;
 }
 
-.hint { color: var(--muted); font-size: 13px; }
-
 footer { margin-top: 24px; font-size: 13px; }
 footer a, .back a, .legal a { color: var(--muted); }
 
@@ -118,6 +123,3 @@ footer a, .back a, .legal a { color: var(--muted); }
 .legal .muted { color: var(--muted); }
 .back { margin: 0 0 16px; font-size: 14px; }
 
-@media (max-width: 420px) {
-  .links a { flex-direction: column; gap: 0; }
-}

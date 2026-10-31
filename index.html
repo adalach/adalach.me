@@ -9,7 +9,7 @@
 </head>
 <body>
   <main class="card">
-    <div class="monogram" aria-hidden="true">AD</div>
+    <img class="avatar" src="assets/avatar.jpg" alt="Agata Dalach" width="96" height="96">
     <h1>Agata Dalach</h1>
     <p class="role">PhD researcher · Technical University of Munich</p>
     <p class="bio">
@@ -17,41 +17,26 @@
       buildings as graphs so models can predict their energy demand.
     </p>
 
-    <nav class="links" aria-label="Links">
-      <a href="https://adalach.com/beg">
-        <span class="label"><span class="icon" style="--icon: url(assets/beg.svg)"></span>Building Energy Graphs</span>
-        <span class="hint">My PhD project</span>
-      </a>
-      <a href="https://www.cee.ed.tum.de/ccbe/team/agata-dalach/">
-        <span class="label"><img class="icon" src="assets/tum-logo.svg" alt="" width="20" height="20">TUM profile</span>
-        <span class="hint">Team page</span>
-      </a>
-      <a href="https://scholar.google.com/citations?user=kjVb570AAAAJ&amp;hl=en">
-        <span class="label"><span class="icon" style="--icon: url(assets/google-scholar.svg)"></span>Google Scholar</span>
-        <span class="hint">Publications</span>
-      </a>
-      <a href="https://www.researchgate.net/profile/Agata_Dalach">
-        <span class="label"><span class="icon" style="--icon: url(assets/researchgate.svg)"></span>ResearchGate</span>
-        <span class="hint">Publications</span>
-      </a>
-      <a href="https://orcid.org/0009-0005-7901-5129">
-        <span class="label"><span class="icon" style="--icon: url(assets/orcid.svg)"></span>ORCID</span>
-        <span class="hint">0009-0005-7901-5129</span>
-      </a>
-      <a href="https://www.linkedin.com/in/agatadalach/">
-        <span class="label"><span class="icon" style="--icon: url(assets/linkedin.svg)"></span>LinkedIn</span>
-        <span class="hint">Professional profile</span>
-      </a>
-      <a href="https://github.com/adalach">
-        <span class="label"><span class="icon" style="--icon: url(assets/github.svg)"></span>GitHub</span>
-        <span class="hint">Code and Obsidian plugins</span>
-      </a>
-      <a href="privacy.html#contact" data-mail-link>
-        <span class="label"><span class="icon" style="--icon: url(assets/envelope.svg)"></span>Email</span>
-        <span class="hint">Write to me</span>
-      </a>
-      <!-- TODO: CV (PDF) -->
-    </nav>
+    <section class="group" aria-labelledby="g-me">
+      <h2 id="g-me">Find me</h2>
+      <ul class="chips">
+        <li><a href="https://www.cee.ed.tum.de/ccbe/team/agata-dalach/"><img class="icon" src="assets/tum-logo.svg" alt="" width="20" height="20">TUM</a></li>
+        <li><a href="https://www.linkedin.com/in/agatadalach/"><span class="icon" style="--icon: url(assets/linkedin.svg)"></span>LinkedIn</a></li>
+        <li><a href="https://github.com/adalach"><span class="icon" style="--icon: url(assets/github.svg)"></span>GitHub</a></li>
+        <li><a href="privacy.html#contact" data-mail-link><span class="icon" style="--icon: url(assets/envelope.svg)"></span>Email</a></li>
+      </ul>
+    </section>
+
+    <section class="group" aria-labelledby="g-pub">
+      <h2 id="g-pub">Publications</h2>
+      <ul class="chips">
+        <li><a href="https://scholar.google.com/citations?user=kjVb570AAAAJ&amp;hl=en"><span class="icon" style="--icon: url(assets/google-scholar.svg)"></span>Google Scholar</a></li>
+        <li><a href="https://www.researchgate.net/profile/Agata_Dalach"><span class="icon" style="--icon: url(assets/researchgate.svg)"></span>ResearchGate</a></li>
+        <li><a href="https://orcid.org/0009-0005-7901-5129"><span class="icon" style="--icon: url(assets/orcid.svg)"></span>ORCID</a></li>
+      </ul>
+    </section>
+
+    <!-- Project sections go here once their sites exist (e.g. Building Energy Graphs at adalach.com/beg). TODO: CV (PDF) -->
 
     <footer><a href="privacy.html">Privacy</a></footer>
   </main>

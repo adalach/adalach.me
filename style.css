@@ -6,6 +6,7 @@
   --text: #1c2833;
   --muted: #5b6b78;
   --line: #dbe1e6;
+  --on-blue: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +17,7 @@
     --text: #e8eef3;
     --muted: #9fb0be;
     --line: #2a3a47;
+    --on-blue: #0f1820;
   }
 }
 
@@ -123,3 +125,26 @@ footer a, .back a, .legal a { color: var(--muted); }
 .legal .muted { color: var(--muted); }
 .back { margin: 0 0 16px; font-size: 14px; }
 
+
+.split { display: inline-flex; }
+
+.split a {
+  border-right: 0;
+  border-radius: 999px 0 0 999px;
+}
+
+.copy {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px 0 10px;
+  border: 1px solid var(--tum-blue);
+  border-radius: 0 999px 999px 0;
+  background: var(--tum-blue);
+  cursor: pointer;
+  transition: filter 0.15s;
+}
+
+.copy:hover,
+.copy:focus-visible { filter: brightness(1.12); outline: none; }
+
+.copy .icon { background: var(--on-blue); }

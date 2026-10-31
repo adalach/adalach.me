@@ -37,7 +37,7 @@ body {
 
 .card {
   width: 100%;
-  max-width: 520px;
+  max-width: 560px;
   padding: 40px 32px 32px;
   background: var(--panel);
   border: 1px solid var(--line);
@@ -136,7 +136,7 @@ footer a, .back a, .legal a { color: var(--muted); }
 .copy {
   display: inline-flex;
   align-items: center;
-  padding: 0 12px 0 10px;
+  padding: 0 11px 0 9px;
   border: 1px solid var(--tum-blue);
   border-radius: 0 999px 999px 0;
   background: var(--tum-blue);
@@ -147,4 +147,8 @@ footer a, .back a, .legal a { color: var(--muted); }
 .copy:hover,
 .copy:focus-visible { filter: brightness(1.12); outline: none; }
 
-.copy .icon { background: var(--on-blue); }
+.copy .icon {
+  width: 16px;
+  height: 16px;
+  background: var(--on-blue);
+}
